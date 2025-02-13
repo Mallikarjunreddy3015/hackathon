@@ -61,8 +61,8 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/Mallikarjunreddy3015/hackathon.git
+    cd hackathon
     ```
 
 2.  **Create a virtual environment (recommended):**
@@ -155,7 +155,3 @@ Before you begin, ensure you have the following installed:
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
