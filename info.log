@@ -1,0 +1,23 @@
+2025-02-13 21:58:36,570 - INFO - Transcribe processed in 0.71s, text: ' Show India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 21:58:49,288 - INFO - Transcribe processed in 0.57s, text: ' Zoom into USA.', command: {'command': 'zoom', 'locations': ['into usa.']}
+2025-02-13 21:59:02,970 - INFO - Transcribe processed in 0.50s, text: ' Zoom into Thailand.', command: {'command': 'zoom', 'locations': ['into thailand.']}
+2025-02-13 21:59:34,044 - INFO - Transcribe processed in 0.47s, text: ' Show Mumbai', command: {'command': 'zoom', 'locations': ['mumbai']}
+2025-02-13 21:59:43,192 - INFO - Transcribe processed in 0.48s, text: ' Show USA', command: {'command': 'zoom', 'locations': ['usa']}
+2025-02-13 21:59:55,823 - INFO - Transcribe processed in 0.50s, text: ' Shoth Island', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:00:02,675 - INFO - Transcribe processed in 0.50s, text: ' Zoom into Thailand.', command: {'command': 'zoom', 'locations': ['into thailand.']}
+2025-02-13 22:00:14,159 - INFO - Transcribe processed in 0.47s, text: ' Short Highland', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:00:19,906 - INFO - Transcribe processed in 0.50s, text: ' Shothai Land', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:00:28,973 - INFO - Transcribe processed in 0.49s, text: ' Zoom into Delhi', command: {'command': 'zoom', 'locations': ['into delhi']}
+2025-02-13 22:00:57,592 - INFO - Transcribe processed in 0.52s, text: ' on autopython resistant', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:02:01,702 - INFO - Transcribe processed in 0.67s, text: ' Show India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 22:02:13,215 - INFO - Transcribe processed in 0.54s, text: ' Zoom into India.', command: {'command': 'zoom', 'locations': ['into india.']}
+2025-02-13 22:04:54,614 - INFO - Transcribe processed in 0.75s, text: ' Huh?', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:05:35,448 - INFO - Transcribe processed in 0.51s, text: ' Bye guys!', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:30:21,552 - INFO - Transcribe processed in 0.77s, text: ' I told it to', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:33:22,824 - INFO - Transcribe processed in 0.72s, text: ' Show India.', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 22:33:35,248 - INFO - Transcribe processed in 0.52s, text: ' Zoom into India.', command: {'command': 'zoom', 'locations': ['into india.']}
+2025-02-13 22:39:06,242 - INFO - Transcribe processed in 0.76s, text: ' Zoom into India.', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 22:39:17,830 - INFO - Transcribe processed in 0.49s, text: ' Zoom into Alaska.', command: {'command': 'zoom', 'locations': ['alaska']}
+2025-02-13 22:39:37,223 - INFO - Transcribe processed in 0.50s, text: ' Zoom into Mexico.', command: {'command': 'zoom', 'locations': ['mexico']}
+2025-02-13 22:39:52,270 - INFO - Transcribe processed in 0.59s, text: ' Mexico is only in the middle', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:39:58,076 - INFO - Transcribe processed in 0.50s, text: ' Zoom into Mumbai', command: {'command': 'zoom', 'locations': ['mumbai']}
