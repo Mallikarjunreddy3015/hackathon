@@ -21,3 +21,98 @@
 2025-02-13 22:39:37,223 - INFO - Transcribe processed in 0.50s, text: ' Zoom into Mexico.', command: {'command': 'zoom', 'locations': ['mexico']}
 2025-02-13 22:39:52,270 - INFO - Transcribe processed in 0.59s, text: ' Mexico is only in the middle', command: {'command': 'unknown', 'locations': []}
 2025-02-13 22:39:58,076 - INFO - Transcribe processed in 0.50s, text: ' Zoom into Mumbai', command: {'command': 'zoom', 'locations': ['mumbai']}
+2025-02-13 22:48:02,889 - INFO - Transcribe processed in 1.69s, text: ' Shauwee Jipt', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:48:17,016 - INFO - Transcribe processed in 1.64s, text: ' Show Egypt.', command: {'command': 'zoom', 'locations': ['egypt']}
+2025-02-13 22:48:26,470 - INFO - Transcribe processed in 1.69s, text: ' Thank you.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:48:44,794 - INFO - Transcribe processed in 1.88s, text: ' Let me confirm.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:50:38,041 - INFO - Transcribe processed in 0.53s, text: ' Show Egypt.', command: {'command': 'zoom', 'locations': ['egypt']}
+2025-02-13 22:50:53,783 - INFO - Transcribe processed in 0.54s, text: ' Marq Israel', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:51:01,027 - INFO - Transcribe processed in 0.50s, text: ' Mark Israel', command: {'command': 'marker', 'locations': ['israel']}
+2025-02-13 22:51:08,330 - INFO - Transcribe processed in 0.53s, text: ' Distance between Egypt and Israel', command: {'command': 'route', 'locations': ['egypt', 'israel']}
+2025-02-13 22:51:19,342 - INFO - Transcribe processed in 0.55s, text: ' The route between Egypt and Israel.', command: {'command': 'route', 'locations': ['egypt', 'israel']}
+2025-02-13 22:51:29,710 - INFO - Transcribe processed in 0.72s, text: ' root from delitomombai', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:51:43,550 - INFO - Transcribe processed in 0.56s, text: ' Root from Egypt to Israel', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:51:54,566 - INFO - Transcribe processed in 0.55s, text: ' distance between Mumbai and Delhi.', command: {'command': 'route', 'locations': ['mumbai', 'delhi']}
+2025-02-13 22:52:09,353 - INFO - Transcribe processed in 0.53s, text: ' Distance between Egypt and Israel', command: {'command': 'route', 'locations': ['egypt', 'israel']}
+2025-02-13 22:52:32,795 - INFO - Transcribe processed in 0.71s, text: ' ruled from Israel', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:52:42,931 - INFO - Transcribe processed in 0.59s, text: ' root from jodapur to', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:52:53,044 - INFO - Transcribe processed in 0.57s, text: ' root from jothpondra del', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:53:01,377 - INFO - Transcribe processed in 0.62s, text: ' Distance build from Amda bar to Delhi.', command: {'command': 'route', 'locations': ['amda bar', 'delhi']}
+2025-02-13 22:53:14,857 - INFO - Transcribe processed in 0.53s, text: ' distance from go R2', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:53:25,503 - INFO - Transcribe processed in 0.55s, text: ' Distance from God to Indore', command: {'command': 'route', 'locations': ['god', 'indore']}
+2025-02-13 22:53:47,652 - INFO - Transcribe processed in 0.49s, text: ' satellite on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-13 22:53:53,071 - INFO - Transcribe processed in 0.51s, text: ' Mark Texas Marvin', command: {'command': 'marker', 'locations': ['texas marvin']}
+2025-02-13 22:53:57,563 - INFO - Transcribe processed in 0.50s, text: ' Thanks.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:54:07,688 - INFO - Transcribe processed in 0.54s, text: ' Zoom into Australia.', command: {'command': 'zoom', 'locations': ['australia']}
+2025-02-13 22:54:15,232 - INFO - Transcribe processed in 0.60s, text: ' high-ways on', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:54:23,409 - INFO - Transcribe processed in 0.52s, text: ' Then show roads.', command: {'command': 'zoom', 'locations': ['roads']}
+2025-02-13 22:54:31,803 - INFO - Transcribe processed in 0.52s, text: ' Zoom into Australia.', command: {'command': 'zoom', 'locations': ['australia']}
+2025-02-13 22:54:39,122 - INFO - Transcribe processed in 0.49s, text: ' highways on', command: {'command': 'highways', 'locations': ['on']}
+2025-02-13 22:57:37,744 - INFO - Transcribe processed in 0.55s, text: ' shohai viz', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:57:47,767 - INFO - Transcribe processed in 0.53s, text: ' Showed words.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:57:55,085 - INFO - Transcribe processed in 0.54s, text: ' Show rods.', command: {'command': 'zoom', 'locations': ['rods']}
+2025-02-13 22:58:41,149 - INFO - Transcribe processed in 1.80s, text: ' Show up, road.', command: {'command': 'zoom', 'locations': ['up']}
+2025-02-13 22:58:56,232 - INFO - Transcribe processed in 1.68s, text: ' Show roads.', command: {'command': 'highways', 'locations': ['roads']}
+2025-02-13 22:59:13,158 - INFO - Transcribe processed in 1.66s, text: ' highways on', command: {'command': 'highways', 'locations': ['highways']}
+2025-02-13 22:59:24,558 - INFO - Transcribe processed in 1.64s, text: ' Hydros', command: {'command': 'unknown', 'locations': []}
+2025-02-13 22:59:43,430 - INFO - Transcribe processed in 1.71s, text: ' Hide the roads.', command: {'command': 'highways', 'locations': ['roads']}
+2025-02-13 23:00:04,052 - INFO - Transcribe processed in 1.64s, text: ' highway zone', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:00:14,455 - INFO - Transcribe processed in 1.76s, text: ' Hives off.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:00:24,762 - INFO - Transcribe processed in 1.67s, text: ' highways off', command: {'command': 'highways', 'locations': ['highways']}
+2025-02-13 23:00:47,393 - INFO - Transcribe processed in 1.67s, text: ' Highways on', command: {'command': 'highways', 'locations': ['highways']}
+2025-02-13 23:06:21,931 - INFO - Transcribe processed in 1.87s, text: ' Navigate me to IndiaGate', command: {'command': 'route', 'locations': ['to indiagate']}
+2025-02-13 23:06:49,446 - INFO - Transcribe processed in 1.86s, text: ' Navigate me IndiaGate', command: {'command': 'route', 'locations': ['indiagate']}
+2025-02-13 23:07:42,845 - INFO - Transcribe processed in 1.93s, text: ' Add here end chords or start chords', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:08:15,150 - INFO - Transcribe processed in 1.77s, text: ' Navigate Mingoa', command: {'command': 'route', 'locations': ['mingoa']}
+2025-02-13 23:08:22,723 - INFO - Transcribe processed in 1.76s, text: ' Navigate Marvin', command: {'command': 'route', 'locations': ['marvin']}
+2025-02-13 23:08:32,416 - INFO - Transcribe processed in 1.73s, text: ' Navigate me Goa', command: {'command': 'route', 'locations': ['goa']}
+2025-02-13 23:09:06,730 - INFO - Transcribe processed in 1.85s, text: ' That's all you', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:10:13,883 - INFO - Transcribe processed in 2.02s, text: ' otherwise you need to use the', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:11:09,114 - INFO - Transcribe processed in 1.82s, text: ' function', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:11:23,392 - INFO - Transcribe processed in 1.80s, text: ' I have a', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:16:41,222 - INFO - Transcribe processed in 1.77s, text: ' Navigate me to India gate', command: {'command': 'navigate', 'locations': ['me to india gate']}
+2025-02-13 23:17:03,208 - INFO - Transcribe processed in 1.82s, text: ' Yeah', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:19:51,418 - INFO - Transcribe processed in 1.79s, text: ' Navigate me to IndiaGate', command: {'command': 'navigate', 'locations': ['me to indiagate']}
+2025-02-13 23:20:38,032 - INFO - Transcribe processed in 1.91s, text: ' Navigate me to India gate.', command: {'command': 'navigate', 'locations': ['india gate']}
+2025-02-13 23:20:56,102 - INFO - Transcribe processed in 2.53s, text: ' but still langari current location there or something yeah', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:21:05,552 - INFO - Transcribe processed in 1.76s, text: ' and reset.', command: {'command': 'reset', 'locations': []}
+2025-02-13 23:21:12,226 - INFO - Transcribe processed in 1.77s, text: ' Navigate me to Beijing.', command: {'command': 'navigate', 'locations': ['beijing']}
+2025-02-13 23:21:35,112 - INFO - Transcribe processed in 1.77s, text: ' distance between Delhi and Bangalore', command: {'command': 'route', 'locations': ['delhi', 'bangalore']}
+2025-02-13 23:29:03,823 - INFO - Transcribe processed in 1.73s, text: ' Sure Africa!', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:29:18,098 - INFO - Transcribe processed in 1.76s, text: ' Zoom into Africa', command: {'command': 'zoom', 'locations': ['africa']}
+2025-02-13 23:32:54,760 - INFO - Transcribe processed in 1.74s, text: ' Show Africa!', command: {'command': 'zoom', 'locations': ['africa']}
+2025-02-13 23:33:52,078 - INFO - Transcribe processed in 1.65s, text: ' Show India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 23:35:15,980 - INFO - Transcribe processed in 2.17s, text: ' Show India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 23:35:27,504 - INFO - Transcribe processed in 1.88s, text: ' Shoa America.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:35:44,705 - INFO - Transcribe processed in 1.94s, text: ' Navigate me to America', command: {'command': 'navigate', 'locations': ['america']}
+2025-02-13 23:35:54,465 - INFO - Transcribe processed in 2.06s, text: ' navigate me to Bangalore', command: {'command': 'navigate', 'locations': ['bangalore']}
+2025-02-13 23:36:23,048 - INFO - Transcribe processed in 2.77s, text: ' Go to the recommendation in all the other parts.', command: {'command': 'navigate', 'locations': ['the recommendation in all the other parts']}
+2025-02-13 23:37:11,546 - INFO - Transcribe processed in 1.81s, text: ' So, the', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:37:18,135 - INFO - Transcribe processed in 1.66s, text: ' surely', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:37:28,057 - INFO - Transcribe processed in 2.26s, text: ' Surely', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:37:35,620 - INFO - Transcribe processed in 1.73s, text: ' Sure then Marvin', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:37:49,810 - INFO - Transcribe processed in 1.83s, text: ' Show India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-13 23:38:14,461 - INFO - Transcribe processed in 1.86s, text: ' Shod Delhi', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:38:23,075 - INFO - Transcribe processed in 1.86s, text: ' Zoom into Delhi.', command: {'command': 'zoom', 'locations': ['delhi']}
+2025-02-13 23:40:55,709 - INFO - Transcribe processed in 2.13s, text: ' Stack Bipura, Java backend, Vio server, let's raise up.', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:41:02,422 - INFO - Transcribe processed in 1.84s, text: ' I will try to get the best team', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:53:04,625 - INFO - Transcribe processed in 2.05s, text: ' I am going to do a little bit of this', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:53:29,461 - INFO - Transcribe processed in 1.88s, text: ' Tofair GPU made it back', command: {'command': 'unknown', 'locations': []}
+2025-02-13 23:53:52,434 - INFO - Transcribe processed in 1.86s, text: ' Something. I'm gonna speak here.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:19:10,909 - INFO - Transcribe processed in 2.33s, text: ' ABA is used, KALM, different methods.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:19:20,438 - INFO - Transcribe processed in 1.86s, text: ' and speech to text commands, actions.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:33:43,298 - INFO - Transcribe processed in 1.83s, text: ' Show New York', command: {'command': 'zoom', 'locations': ['new york']}
+2025-02-14 00:34:43,938 - INFO - Transcribe processed in 2.36s, text: ' I', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:44:13,973 - INFO - Transcribe processed in 1.94s, text: ' shows our dessert.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:44:20,630 - INFO - Transcribe processed in 1.79s, text: ' can zoom into Sahar Marvin', command: {'command': 'zoom', 'locations': ['sahar marvin']}
+2025-02-14 00:44:28,673 - INFO - Transcribe processed in 1.92s, text: ' Zoom into Sahara Desert.', command: {'command': 'zoom', 'locations': ['sahara desert']}
+2025-02-14 00:44:40,306 - INFO - Transcribe processed in 1.97s, text: ' Zoom into agent', command: {'command': 'zoom', 'locations': ['agent']}
+2025-02-14 00:44:50,070 - INFO - Transcribe processed in 1.97s, text: ' Zoom into India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-14 00:45:03,068 - INFO - Transcribe processed in 2.34s, text: ' satellite on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 00:47:06,280 - INFO - Transcribe processed in 2.04s, text: ' satellite view on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 00:47:14,811 - INFO - Transcribe processed in 1.90s, text: ' satellite view on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 00:47:24,042 - INFO - Transcribe processed in 2.06s, text: ' Show satellite view.', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 00:48:42,880 - INFO - Transcribe processed in 1.94s, text: ' in five pixels', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:50:34,040 - INFO - Transcribe processed in 1.93s, text: ' Spansarabos yenga', command: {'command': 'unknown', 'locations': []}
+2025-02-14 00:54:49,495 - INFO - Transcribe processed in 1.92s, text: ' satellite home', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 00:55:19,974 - INFO - Transcribe processed in 1.82s, text: ' satellite off', command: {'command': 'satellite', 'locations': ['off']}

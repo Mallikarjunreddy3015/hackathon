@@ -2,7 +2,10 @@ from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 import tempfile
 from transformers import pipeline
-from assistant import classifier, parse_command  # Import classifier and parse_command from assistant
+from assistant import (
+    classifier,
+    parse_command,
+)  # Import classifier and parse_command from assistant
 import logging
 import time
 
@@ -13,7 +16,7 @@ logging.basicConfig(
     level=logging.INFO,
     filename="info.log",
     filemode="a",
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
 app = FastAPI()
@@ -43,8 +46,11 @@ async def transcribe(file: UploadFile = File(...)):
         text = result.get("text", "")
         command = parse_command(text)
     end = time.time()
-    logging.info(f"Transcribe processed in {end - start:.2f}s, text: '{text}', command: {command}")
+    logging.info(
+        f"Transcribe processed in {end - start:.2f}s, text: '{text}', command: {command}"
+    )
     return JSONResponse({"text": text, "command": command})
+
 
 # New route: /wakeup to detect the wake word using assistant.py's classifier.
 @app.post("/wakeup")
@@ -61,7 +67,9 @@ async def wakeup(file: UploadFile = File(...)):
             predictions = classifier(temp_file.name)
             wake_detected = any(
                 p["label"].lower() == wake_word and p["score"] > threshold
-                for p in (predictions if isinstance(predictions, list) else [predictions])
+                for p in (
+                    predictions if isinstance(predictions, list) else [predictions]
+                )
             )
         except Exception as e:
             wake_detected = False
@@ -70,4 +78,5 @@ async def wakeup(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=False)
+
+    uvicorn.run("server:app", host="127.0.0.1", port=8080, reload=True)

@@ -11,9 +11,6 @@
     <!-- Inline CSS (from static/styles.css) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <style>
         body,
         html {
             margin: 0;
@@ -21,16 +18,14 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            /* font-family: Arial, sans-serif; */
-            font-family: "Roboto", serif;
-            background-color: rgba(230, 230, 230, 0.9);
+            font-family: Arial, sans-serif;
         }
 
         .controls {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 15px;
+            padding: 20px;
             background-color: rgba(230, 230, 230, 0.9);
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             z-index: 1;
@@ -55,13 +50,8 @@
             transition: background-color 0.3s;
             width: calc(100% - 10px);
             display: block;
-            margin: 2px auto;
+            margin: 5px auto;
 
-        }
-
-        span {
-            color: #373737;
-            line-height: 1;
         }
 
         button:hover {
@@ -159,10 +149,6 @@
                 <div id="micIcon" class="mic-icon">
                     <i class="fa fa-microphone"></i>
                 </div>
-                <div style="margin-top: 5px;color:#3a3a3a;"><strong>Try saying...</strong></div>
-                <div style="margin-top: 5px;color:#3a3a3a;"> "Marvin, zoom into Australia"</div>
-                <div style="margin-top: 5px;color:#3a3a3a;">"Marvin, Navigate me to Mumbai"</div>
-                <div style="margin-top: 5px;color:#3a3a3a;">"Marvin, Show satellite view"</div>
             </div>
         </div>
         <div id="map" class="map"></div>
