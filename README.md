@@ -1,4 +1,4 @@
-#  Marvin - Voice Activated Interactive Map Assistant
+# Marvin - Voice Activated Interactive Map Assistant
 
 ## Overview
 
@@ -15,6 +15,7 @@ Marvin is a realtime voice-controlled assistant designed to interact with a map 
 - [Deployment](#deployment)
   - [Docker](#docker)
   - [Manual Deployment](#manual-deployment)
+- [Demo](#demo)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -110,13 +111,13 @@ Before you begin, ensure you have the following installed:
 1.  **Build the Docker image:**
 
     ```bash
-    docker build -t realtime-assistant .
+    docker build -t rokvin/spacecon-realtime .
     ```
 
 2.  **Run the Docker container:**
 
     ```bash
-    docker run -d -p 8080:8080 realtime-assistant
+    docker run -d -p 8080:8080 rokvin/spacecon-realtime
     ```
 
     This command runs the container in detached mode, mapping port 8080 on the host to port 8080 in the container.
@@ -151,6 +152,13 @@ Before you begin, ensure you have the following installed:
     ```
 
     This makes the application accessible from any IP address. Consider using a process manager like `systemd` or `supervisor` to ensure the application restarts automatically if it crashes.
+
+## Demo
+
+- **Docker Hub:** [Official Docker Image](https://hub.docker.com/r/rokvin/spacecon-realtime)
+- **Live Demo deployed as a Docker Image in Google Cloud:** [Marvin Demo](https://hello-756234311992.us-central1.run.app/)
+- **YouTube Video:** [Marvin Demo Video](http://youtube.com/your-demo-video)
+- **Presentation:** [Marvin Project Presentation](http://your-presentation-link.com)
 
 ## Contributing
 
