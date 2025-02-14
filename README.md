@@ -169,8 +169,7 @@ Before you begin, ensure you have the following installed:
 
 - **Docker Hub:** [Official Docker Image](https://hub.docker.com/r/rokvin/spacecon-realtime)
 - **Live Demo deployed as a Docker Image in Google Cloud:** [Marvin Demo](https://hello-756234311992.us-central1.run.app/)
-- **YouTube Video:** [Marvin Demo Video](http://youtube.com/your-demo-video)
-- **Presentation:** [Marvin Project Presentation](http://your-presentation-link.com)
+- **YouTube Video:** [Marvin Demo Video](https://www.youtube.com/watch?v=L54UoKyxUE4)
 
 ## Contributing
 

@@ -104,7 +104,7 @@ def parse_command(text):
         return {"command": "highways", "locations": [status]}
 
     route_match = re.search(
-        r"\b(?:distance|shortest path|route|navigate|navigation|spath)\b.*?\b(?:from|between)\b\s+([\w\s]+?)\s+(?:to|and)\s+([\w\s]+)",
+        r"\b(?:distance|shortest path|route|routes|navigate|navigation|spath)\b.*?\b(?:from|between)\b\s+([\w\s]+?)\s+(?:to|and)\s+([\w\s]+)",
         text,
     )
     if route_match:
@@ -143,7 +143,7 @@ def parse_command(text):
     patterns = {
         "zoom": r"(?:show|go to|open|search|explore|zoom(?: in| out)?(?: to| on| at)?|display|find|search for|take me to|navigate to|zom(?: in| out)?(?: to| on| at)?|show me(?: the)?|zomm(?: in)?(?: to)?|zoooom|showw|zooom|shw|gt|serch|show meee|zooooom|zo0m|shoooow|zo0m|zom|showw location|zooo00om)(?:\s+the)?\s+(.+)",
         "marker": r"(?:add marker(?: in| on)?|mark(?: on)?|pin|ping|add a mark at|drop pin on|set markr to|place marker in|create marker|mark\s+)(.+)",
-        "route": r"(?:get me route|show me route|route|navigate(?: me)?|distance between|what is the shortest path between|show me path between|plan route|directions|find route|gt route betwen|navigae|how to get|best route|shw rout|show rout|plan a trip|route planning|travel route|best way|how to reach|gt directions|find a route|how to go|i want go|navigate to|rout|find shortest route|give me the route|find best route|show rout|get route)(?:\s+(?:from|between))?\s+(.+)",
+        "route": r"(?:get me route|show me route|routes|route|navigate(?: me)?|distance between|what is the shortest path between|show me path between|plan route|directions|find route|gt route betwen|navigae|how to get|best route|shw rout|show rout|plan a trip|route planning|travel route|best way|how to reach|gt directions|find a route|how to go|i want go|navigate to|rout|find shortest route|give me the route|find best route|show rout|get route)(?:\s+(?:from|between))?\s+(.+)",
         "reset": r"(?:clear|reset|reload|refresh|clrscrn|clear all markers|start over|clear the map|reset view|clear markers and routes|back to default|clear all please|reset all|clear everything|clear the map data|clear map view|clearr screen|clear all data on map)",
         "satellite": r"(?:satellite|switch on satellite mode|show me satellite view|turn on satelite|satelite view please|disable satellite|satellite mode off|activate satellite mode|deactivate satellite mode|sat view on|sat view off|turn on satellite image|on satellite|sat on|sat off|satellite view on|turn on the satelite view|turn of the satelite)",
         "highways": r"(?:highways|highways on|highways off|show highways|turn off highways|hide highways|highway display on|enable highways|disable highway view|highway layer on|highway layer off|remove highways|highwayss on|highwas off|highwaysss on please|on highways|highways of now)",

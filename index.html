@@ -517,7 +517,7 @@
                 mobileStatusDisplay.textContent = "Say Marvin...";
                 updateMicIconState("listening");
                 try {
-                    const blob = await recordAudio(750); // chunk_length for wakeup = 750ms
+                    const blob = await recordAudio(800); // chunk_length for wakeup = 750ms
                     const formData = new FormData();
                     formData.append("file", blob, "wakeup.webm");
                     // Call the /wakeup endpoint which uses assistant.py's wake word detection logic.
@@ -543,7 +543,7 @@
                 mobileStatusDisplay.textContent = "Recording command...";
                 updateMicIconState("transcribing");
                 try {
-                    const blob = await recordAudio(3000); // chunk_length for command = 3000ms
+                    const blob = await recordAudio(2500); // chunk_length for command = 3000ms
                     const formData = new FormData();
                     formData.append("file", blob, "command.webm");
                     const response = await fetch("/transcribe", { method: "POST", body: formData });
