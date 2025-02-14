@@ -8,6 +8,7 @@ Marvin is a realtime voice-controlled assistant designed to interact with a map 
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [ML Models & Approach](#ml-models--approach)
 - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -46,6 +47,17 @@ Marvin is a realtime voice-controlled assistant designed to interact with a map 
 - **Services:**
   - Nominatim (OpenStreetMap) for geocoding
   - Openrouteservice for route calculation
+
+## ML Models & Approach
+
+- **Models Used:**  
+  - ✔️ **Whisper (openai/whisper-small.en):** Used for realtime speech transcription.  
+  - ✔️ **AST Speech Commands (MIT/ast-finetuned-speech-commands-v2):** Used for wake word detection and audio classification.
+  
+- **Approach:**  
+  - ➜ **Speech Transcription:** Audio input is streamed to the Whisper model, which converts speech to text in realtime.  
+  - ➜ **Wake Word Detection:** The audio is also classified using the AST model to detect the wake word ("Marvin") with a defined threshold.  
+  - ➜ **Command Parsing:** The transcribed text is then parsed using custom regex logic to determine user commands (e.g., zoom, add marker, route).
 
 ## Setup
 
