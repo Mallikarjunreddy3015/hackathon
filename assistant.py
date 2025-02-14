@@ -4,6 +4,7 @@ from transformers.pipelines.audio_utils import ffmpeg_microphone_live
 import sys
 import re
 import time
+
 # ----------------------------------------------------------------------
 # Wake Word Detection
 # ----------------------------------------------------------------------
@@ -15,7 +16,7 @@ classifier = pipeline(
     "audio-classification",
     model="MIT/ast-finetuned-speech-commands-v2",
     device=device,
-    torch_dtype=dtype
+    torch_dtype=dtype,
 )
 
 
@@ -57,7 +58,7 @@ transcriber = pipeline(
     "automatic-speech-recognition",
     model="openai/whisper-tiny.en",
     device=device,
-    torch_dtype=dtype
+    torch_dtype=dtype,
 )
 
 
@@ -79,9 +80,11 @@ def transcribe(chunk_length_s=3, stream_chunk_s=1):
 
     return item["text"]
 
+
 # ----------------------------------------------------------------------
 #  Command Parsing (using Regex)
 # ----------------------------------------------------------------------
+
 
 def parse_command(text):
     text = text.lower().strip()
@@ -109,20 +112,31 @@ def parse_command(text):
         loc2 = route_match.group(2).strip()
         return {"command": "route", "locations": [loc1, loc2]}
 
+    navigate_match = re.search(
+        r"\b(?:navigate|take me|go to|route to)\b\s+(?:me\s+to\s+)?([\w\s]+)", text
+    )
+    if navigate_match:
+        location = navigate_match.group(1).strip()
+        return {"command": "navigate", "locations": [location]}
+
     # Updated zoom regex to include the "zoom" keyword
     zoom_match = re.search(
-        r"\b(?:show|go to|open|search|explore|zoom)\b(?:\s+(?:in|at|the|into))?\s+([\w\s]+)", text
+        r"\b(?:show|go to|open|search|explore|zoom)\b(?:\s+(?:in|at|the|into))?\s+([\w\s]+)",
+        text,
     )
     if zoom_match:
         location = zoom_match.group(1).strip()
         return {"command": "zoom", "locations": [location]}
 
     marker_match = re.search(
-        r"\b(?:add\s+marker|marker|mark|pin|ping)\b(?:\s+(?:in|on|to))?\s+([\w\s,]+)", text
+        r"\b(?:add\s+marker|marker|mark|pin|ping)\b(?:\s+(?:in|on|to))?\s+([\w\s,]+)",
+        text,
     )
     if marker_match:
         locations_text = marker_match.group(1)
-        locations = [loc.strip() for loc in re.split(r',|and', locations_text) if loc.strip()]
+        locations = [
+            loc.strip() for loc in re.split(r",|and", locations_text) if loc.strip()
+        ]
         return {"command": "marker", "locations": locations}
 
     # Fallback to the original regex patterns
@@ -143,11 +157,33 @@ def parse_command(text):
 
             # The original satellite and highways logic fallback
             if command == "satellite":
-                locations = ["on"] if "on" in text or "activate" in text or ("sat" in text and "view" in text and "on" in text) else ["off"]
+                locations = (
+                    ["on"]
+                    if "on" in text
+                    or "activate" in text
+                    or ("sat" in text and "view" in text and "on" in text)
+                    else ["off"]
+                )
                 return {"command": "satellite", "locations": locations}
 
             if command == "highways":
-                locations = ["on"] if any(phrase in text for phrase in ["highways on", "show highways", "enable highways", "highway layer on", "highwaysss on", "on highways", "highway display on", "highways on now"]) else ["off"]
+                locations = (
+                    ["on"]
+                    if any(
+                        phrase in text
+                        for phrase in [
+                            "highways on",
+                            "show highways",
+                            "enable highways",
+                            "highway layer on",
+                            "highwaysss on",
+                            "on highways",
+                            "highway display on",
+                            "highways on now",
+                        ]
+                    )
+                    else ["off"]
+                )
                 return {"command": "highways", "locations": locations}
 
             locations_str = match.group(1).strip() if match.groups() else ""
@@ -158,28 +194,49 @@ def parse_command(text):
                 elif " and " in locations_str:
                     locations = [loc.strip() for loc in locations_str.split(" and ")]
                 elif " between " in locations_str:
-                    locations = [loc.strip() for loc in locations_str.split(" between ")]
+                    locations = [
+                        loc.strip() for loc in locations_str.split(" between ")
+                    ]
                 elif " from " in locations_str:
                     temp_locations = locations_str.split(" from ")
                     to_locs = []
                     if len(temp_locations) > 1:
                         if " to " in temp_locations[1]:
-                            to_locs = [loc.strip() for loc in temp_locations[1].split(" to ")]
-                            locations = [loc.strip() for loc in re.split(r',\s*|\s+and\s+', temp_locations[0])]
+                            to_locs = [
+                                loc.strip() for loc in temp_locations[1].split(" to ")
+                            ]
+                            locations = [
+                                loc.strip()
+                                for loc in re.split(
+                                    r",\s*|\s+and\s+", temp_locations[0]
+                                )
+                            ]
                             locations.extend(to_locs)
                         else:
-                            locations = [loc.strip() for loc in re.split(r',\s*|\s+and\s+', locations_str)]
+                            locations = [
+                                loc.strip()
+                                for loc in re.split(r",\s*|\s+and\s+", locations_str)
+                            ]
                     else:
-                        locations = [loc.strip() for loc in re.split(r',\s*|\s+and\s+', locations_str)]
+                        locations = [
+                            loc.strip()
+                            for loc in re.split(r",\s*|\s+and\s+", locations_str)
+                        ]
                 else:
-                    locations = [loc.strip() for loc in re.split(r',\s*|\s+and\s+', locations_str)]
+                    locations = [
+                        loc.strip()
+                        for loc in re.split(r",\s*|\s+and\s+", locations_str)
+                    ]
             elif command == "marker":
-                locations = [loc.strip() for loc in re.split(r',\s*|\s+and\s+', locations_str)]
+                locations = [
+                    loc.strip() for loc in re.split(r",\s*|\s+and\s+", locations_str)
+                ]
             else:
                 locations = [locations_str]
             return {"command": command, "locations": locations}
 
     return {"command": "unknown", "locations": []}
+
 
 # # ----------------------------------------------------------------------
 # # Main Voice Assistant Logic
