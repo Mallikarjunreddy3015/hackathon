@@ -116,3 +116,47 @@
 2025-02-14 00:50:34,040 - INFO - Transcribe processed in 1.93s, text: ' Spansarabos yenga', command: {'command': 'unknown', 'locations': []}
 2025-02-14 00:54:49,495 - INFO - Transcribe processed in 1.92s, text: ' satellite home', command: {'command': 'satellite', 'locations': ['on']}
 2025-02-14 00:55:19,974 - INFO - Transcribe processed in 1.82s, text: ' satellite off', command: {'command': 'satellite', 'locations': ['off']}
+2025-02-14 12:01:30,629 - INFO - Transcribe processed in 3.22s, text: ' Show India', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-14 12:02:02,386 - INFO - Transcribe processed in 2.36s, text: ' Navigate me to Rashkupati Bhavan.', command: {'command': 'navigate', 'locations': ['rashkupati bhavan']}
+2025-02-14 12:02:30,322 - INFO - Transcribe processed in 2.11s, text: ' for the best', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:03:22,611 - INFO - Transcribe processed in 2.05s, text: ' Navigate me to Beijing', command: {'command': 'navigate', 'locations': ['beijing']}
+2025-02-14 12:03:45,775 - INFO - Transcribe processed in 1.98s, text: ' satellite on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 12:04:47,084 - INFO - Transcribe processed in 1.95s, text: ' I', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:05:05,638 - INFO - Transcribe processed in 2.37s, text: ' So, we will see how it will be done.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:16:05,406 - INFO - Transcribe processed in 1.89s, text: ' I'm sorry.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:18:18,631 - INFO - Transcribe processed in 2.11s, text: ' I think we should consider the spot.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:24:26,647 - INFO - Transcribe processed in 2.13s, text: ' I'm not going to do anything with my mind.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:25:04,024 - INFO - Transcribe processed in 2.01s, text: ' Zoom into Delhi', command: {'command': 'zoom', 'locations': ['delhi']}
+2025-02-14 12:25:15,409 - INFO - Transcribe processed in 2.18s, text: ' satellite off', command: {'command': 'satellite', 'locations': ['off']}
+2025-02-14 12:25:28,887 - INFO - Transcribe processed in 2.28s, text: ' Zou went to JV Road Delhi', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:25:39,016 - INFO - Transcribe processed in 1.97s, text: ' Kanbar', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:25:46,063 - INFO - Transcribe processed in 1.97s, text: ' So, we will see.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:25:56,205 - INFO - Transcribe processed in 2.12s, text: ' Zoom into Kanpur.', command: {'command': 'zoom', 'locations': ['kanpur']}
+2025-02-14 12:26:21,540 - INFO - Transcribe processed in 2.58s, text: ' Zoom into Kanpur Airport.', command: {'command': 'zoom', 'locations': ['kanpur airport']}
+2025-02-14 12:26:34,255 - INFO - Transcribe processed in 2.53s, text: ' I'm going to do a video, I'll see you next time', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:26:59,347 - INFO - Transcribe processed in 2.54s, text: ' So', command: {'command': 'unknown', 'locations': []}
+2025-02-14 12:28:05,584 - INFO - Transcribe processed in 2.10s, text: ' navigate with to Beijing', command: {'command': 'navigate', 'locations': ['with to beijing']}
+2025-02-14 12:28:41,611 - INFO - Transcribe processed in 2.10s, text: ' navigate me to Beijing.', command: {'command': 'navigate', 'locations': ['beijing']}
+2025-02-14 15:06:34,147 - INFO - Transcribe processed in 2.05s, text: ' Marvin?', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:06:54,892 - INFO - Transcribe processed in 2.06s, text: ' Zoom into India.', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-14 15:07:20,509 - INFO - Transcribe processed in 1.87s, text: ' Barvin', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:07:27,435 - INFO - Transcribe processed in 1.91s, text: ' Okay.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:07:51,576 - INFO - Transcribe processed in 2.03s, text: ' satellite on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 15:15:08,904 - INFO - Transcribe processed in 2.55s, text: ' Thank you.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:15:24,872 - INFO - Transcribe processed in 2.16s, text: ' Zoom into Australia.', command: {'command': 'zoom', 'locations': ['australia']}
+2025-02-14 15:15:45,526 - INFO - Transcribe processed in 2.16s, text: ' Okay.', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:16:07,436 - INFO - Transcribe processed in 1.91s, text: ' Zoom into India.', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-14 15:17:15,322 - INFO - Transcribe processed in 2.54s, text: ' Zoom into India.', command: {'command': 'zoom', 'locations': ['india']}
+2025-02-14 15:17:52,068 - INFO - Transcribe processed in 2.01s, text: ' Zoom into Australia.', command: {'command': 'zoom', 'locations': ['australia']}
+2025-02-14 15:18:05,747 - INFO - Transcribe processed in 2.49s, text: ' So minto melbond', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:18:22,819 - INFO - Transcribe processed in 2.04s, text: ' Zoom into Melbourne', command: {'command': 'zoom', 'locations': ['melbourne']}
+2025-02-14 15:18:45,846 - INFO - Transcribe processed in 1.96s, text: ' show New Zealand', command: {'command': 'zoom', 'locations': ['new zealand']}
+2025-02-14 15:18:59,020 - INFO - Transcribe processed in 2.13s, text: ' Zoom into New Zealand.', command: {'command': 'zoom', 'locations': ['new zealand']}
+2025-02-14 15:19:12,476 - INFO - Transcribe processed in 2.30s, text: ' Zoom into Australia.', command: {'command': 'zoom', 'locations': ['australia']}
+2025-02-14 15:19:26,918 - INFO - Transcribe processed in 2.00s, text: ' satellite on', command: {'command': 'satellite', 'locations': ['on']}
+2025-02-14 15:19:35,283 - INFO - Transcribe processed in 2.22s, text: ' Show GGSIPU', command: {'command': 'zoom', 'locations': ['ggsipu']}
+2025-02-14 15:19:53,796 - INFO - Transcribe processed in 2.20s, text: ' ShowGGSIPU Duarka', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:20:08,156 - INFO - Transcribe processed in 2.15s, text: ' ShowGGSIPU Dwarka', command: {'command': 'unknown', 'locations': []}
+2025-02-14 15:20:20,498 - INFO - Transcribe processed in 2.30s, text: ' Zoom into GGSIPU Dwarka', command: {'command': 'zoom', 'locations': ['ggsipu dwarka']}
+2025-02-14 15:25:43,646 - INFO - Transcribe processed in 2.63s, text: ' Zoom into Australia.', command: {'command': 'zoom', 'locations': ['australia']}
+2025-02-14 15:25:53,971 - INFO - Transcribe processed in 2.20s, text: ' navigate me to Mumbai', command: {'command': 'navigate', 'locations': ['mumbai']}

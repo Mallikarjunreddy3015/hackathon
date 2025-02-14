@@ -21,9 +21,17 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            /* font-family: Arial, sans-serif; */
             font-family: "Roboto", serif;
             background-color: rgba(230, 230, 230, 0.9);
+        }
+
+        .status {
+            padding: 8px;
+        }
+
+        #status,
+        #transcription {
+            font-size: small;
         }
 
         .controls {
@@ -38,7 +46,7 @@
         }
 
         input {
-            padding: 10px;
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
             width: calc(100% - 32px);
@@ -47,13 +55,13 @@
         }
 
         button {
-            padding: 10px 20px;
+            padding: 8px 16px;
             border: none;
             border-radius: 5px;
             background-color: #3a3a3a;
             color: white;
             transition: background-color 0.3s;
-            width: calc(100% - 10px);
+            width: calc(100% - 16px);
             display: block;
             margin: 2px auto;
 
@@ -84,8 +92,8 @@
         }
 
         .mic-icon {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background-color: grey;
             display: flex;
@@ -96,7 +104,7 @@
         }
 
         .mic-icon i {
-            font-size: 24px;
+            font-size: 20px;
             color: white;
         }
 
@@ -110,6 +118,13 @@
             animation: pulsate 1s infinite;
         }
 
+        .sugession {
+            font-size: small;
+            margin-top: 5px;
+            color: #3a3a3a;
+        }
+
+
         @keyframes pulsate {
             0% {
                 box-shadow: 0 0 10px 2px rgba(16, 193, 81, 0.5);
@@ -122,12 +137,49 @@
             100% {
                 box-shadow: 0 0 10px 2px rgba(16, 193, 81, 0.5);
             }
+
+        }
+
+        .header {
+            display: none;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .header {
+                width: 100vw;
+                height: 5vh;
+                display: block;
+                margin-top: 2vh;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .map-container {
+                height: 70vh;
+            }
+
+            .controls {
+                width: 100vw;
+            }
         }
     </style>
 </head>
 
 <body>
     <!-- ...existing body content... -->
+    <div class="header">
+        <h1 style="text-align: center;">Marvin <i class="fa fa-map" style="color: #272727;"></i></h1>
+    </div>
     <div class="map-container">
         <div class="sidebar">
             <div class="controls">
@@ -153,20 +205,34 @@
                 <button id="getCurrentLocation">Current Location</button>
             </div>
             <div class="controls">
-                <p id="status">Waiting for wake word...</p>
+                <p id="status">Say Marvin...</p>
                 <p id="transcription"></p>
 
                 <div id="micIcon" class="mic-icon">
                     <i class="fa fa-microphone"></i>
                 </div>
-                <div style="margin-top: 5px;color:#3a3a3a;"><strong>Try saying...</strong></div>
-                <div style="margin-top: 5px;color:#3a3a3a;"> "Marvin, zoom into Australia"</div>
-                <div style="margin-top: 5px;color:#3a3a3a;">"Marvin, Navigate me to Mumbai"</div>
-                <div style="margin-top: 5px;color:#3a3a3a;">"Marvin, Show satellite view"</div>
+                <div class="sugession"><strong>Try saying...</strong></div>
+                <div class="sugession"> "Marvin, zoom into Australia"</div>
+                <div class="sugession">"Marvin, Navigate me to Mumbai"</div>
+                <div class="sugession">"Marvin, Show satellite view"</div>
             </div>
         </div>
         <div id="map" class="map"></div>
     </div>
+
+    <div class="controls mobile">
+        <p id="mobileStatus">Say Marvin...</p>
+        <p id="mobileTranscription"></p>
+
+        <div id="mobileMicIcon" class="mic-icon">
+            <i class="fa fa-microphone"></i>
+        </div>
+        <div class="sugession"><strong>Try saying...</strong></div>
+        <div class="sugession"> "Marvin, zoom into Australia"</div>
+        <div class="sugession">"Marvin, Navigate me to Mumbai"</div>
+        <div class="sugession">"Marvin, Show satellite view"</div>
+    </div>
+
 
     <!-- External scripts from CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/ol/dist/ol.js"></script>
@@ -415,6 +481,8 @@
             // Voice recording & transcription logic
             const statusDisplay = document.getElementById("status");
             const transcriptionDisplay = document.getElementById("transcription");
+            const mobileStatusDisplay = document.getElementById("mobileStatus");
+            const mobileTranscriptionDisplay = document.getElementById("mobileTranscription");
             let mediaStream;
 
             // Function to record audio for a given duration (ms)
@@ -437,7 +505,8 @@
 
             // Listen continuously for the wake word using 750ms audio chunks.
             async function listenForWakeup() {
-                statusDisplay.textContent = "Listening for wake word...";
+                statusDisplay.textContent = "Say Marvin...";
+                mobileStatusDisplay.textContent = "Say Marvin...";
                 updateMicIconState("listening");
                 try {
                     const blob = await recordAudio(750); // chunk_length for wakeup = 750ms
@@ -448,11 +517,13 @@
                     const result = await response.json();
                     if (result.wakeup === true) {
                         statusDisplay.textContent = "Wake word detected! Please speak your command.";
+                        mobileStatusDisplay.textContent = "Wake word detected! Please speak your command.";
                         await recordCommand();
                     }
                 } catch (err) {
                     console.error(err);
                     statusDisplay.textContent = "Error during wakeup detection.";
+                    mobileStatusDisplay.textContent = "Error during wakeup detection.";
                 }
                 // Continue listening
                 listenForWakeup();
@@ -461,6 +532,7 @@
             // Record command from user with 3000ms audio chunk and send for transcription.
             async function recordCommand() {
                 statusDisplay.textContent = "Recording command...";
+                mobileStatusDisplay.textContent = "Recording command...";
                 updateMicIconState("transcribing");
                 try {
                     const blob = await recordAudio(3000); // chunk_length for command = 3000ms
@@ -469,6 +541,7 @@
                     const response = await fetch("/transcribe", { method: "POST", body: formData });
                     const output = await response.json();
                     transcriptionDisplay.textContent = output.text;
+                    mobileTranscriptionDisplay.textContent = output.text;
                     // Process parsed command returned from assistant.py
                     let cmd = output.command;
                     switch (cmd.command) {
@@ -503,27 +576,35 @@
                             console.log("Command not understood:", cmd);
                     }
                     statusDisplay.textContent = "Command executed.";
+                    mobileStatusDisplay.textContent = "Command executed.";
                     setTimeout(() => {
                         transcriptionDisplay.textContent = "";
-                        statusDisplay.textContent = "Waiting for wake word...";
+                        mobileTranscriptionDisplay.textContent = "";
+                        statusDisplay.textContent = "Say Marvin...";
+                        mobileStatusDisplay.textContent = "Say Marvin...";
                         updateMicIconState("listening");
                     }, 3000);
                 } catch (err) {
                     console.error(err);
                     statusDisplay.textContent = "Error during transcription.";
+                    mobileStatusDisplay.textContent = "Error during transcription.";
                 }
             }
 
             // Setup manual record button if present
             const micIcon = document.getElementById("micIcon");
+            const mobileMicIcon = document.getElementById("mobileMicIcon");
 
             // Function to update mic icon state
             const updateMicIconState = (state) => {
                 micIcon.classList.remove("listening", "transcribing");
+                mobileMicIcon.classList.remove("listening", "transcribing");
                 if (state === "listening") {
                     micIcon.classList.add("listening");
+                    mobileMicIcon.classList.add("listening");
                 } else if (state === "transcribing") {
                     micIcon.classList.add("transcribing");
+                    mobileMicIcon.classList.add("transcribing");
                 }
             };
 
