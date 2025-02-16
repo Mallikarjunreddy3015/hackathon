@@ -1,0 +1,2367 @@
+[
+    {
+        "input": "show New York",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "go to San Francisco",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "san francisco"
+            ]
+        }
+    },
+    {
+        "input": "open Los Angeles",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "los angeles"
+            ]
+        }
+    },
+    {
+        "input": "search the Chicago",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "explore the Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "zoom in  Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "zoom Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "add marker in l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "add marker on l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "mark on l2",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "mark on l2",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "explore the Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "pin l1, l2 and l3",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1",
+                "l2",
+                "l3"
+            ]
+        }
+    },
+    {
+        "input": "ping l1, l2 and l3",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1",
+                "l2",
+                "l3"
+            ]
+        }
+    },
+    {
+        "input": "ping l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1",
+                "l2",
+                "l3"
+            ]
+        }
+    },
+    {
+        "input": "get me route from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "show me route from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "route from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "navigate me from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "navigate Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "distance between Miami and Orlando",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "miami",
+                "orlando"
+            ]
+        }
+    },
+    {
+        "input": "what is the shortest path between Dallas and Austin",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "dallas",
+                "austin"
+            ]
+        }
+    },
+    {
+        "input": "show me path between delhi mumbai",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "dallas",
+                "austin"
+            ]
+        }
+    },
+    {
+        "input": "clear",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "reset",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "reload",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "refresh",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "satellite off",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "switch on satellite mode",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "show me satellite view",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highways on",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highways off",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "ZOOM IN TO NEW YORK",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "zoom in india",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "india"
+            ]
+        }
+    },
+    {
+        "input": "zoom paris",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "get me route ",
+        "expected": {
+            "command": "unknown",
+            "locations": []
+        }
+    },
+    {
+        "input": "show New York",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "go to San Francisco",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "san francisco"
+            ]
+        }
+    },
+    {
+        "input": "open Los Angeles",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "los angeles"
+            ]
+        }
+    },
+    {
+        "input": "search the Chicago",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "explore the Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "zoom in  Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "zoom Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "add marker in l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "add marker on l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "mark on l2",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "mark on l2",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "explore the Miami",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "miami"
+            ]
+        }
+    },
+    {
+        "input": "pin l1, l2 and l3",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1",
+                "l2",
+                "l3"
+            ]
+        }
+    },
+    {
+        "input": "ping l1, l2 and l3",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1",
+                "l2",
+                "l3"
+            ]
+        }
+    },
+    {
+        "input": "ping l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "get me route from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "show me route from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "route from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "navigate me from Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "navigate Boston to Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "distance between Miami and Orlando",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "miami",
+                "orlando"
+            ]
+        }
+    },
+    {
+        "input": "what is the shortest path between Dallas and Austin",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "dallas",
+                "austin"
+            ]
+        }
+    },
+    {
+        "input": "show me path between delhi mumbai",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "mumbai"
+            ]
+        }
+    },
+    {
+        "input": "clear",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "reset",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "reload",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "refresh",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "satellite off",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "switch on satellite mode",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "show me satellite view",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highways on",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highways off",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "ZOOM IN TO NEW YORK",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "zoom in india",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "india"
+            ]
+        }
+    },
+    {
+        "input": "zoom paris",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "get me route ",
+        "expected": {
+            "command": "unknown",
+            "locations": []
+        }
+    },
+    {
+        "input": "zomm to London",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "show me San Diego",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "san diego"
+            ]
+        }
+    },
+    {
+        "input": "disply Austin",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "austin"
+            ]
+        }
+    },
+    {
+        "input": "zoom intoo Tokyo",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "tokyo"
+            ]
+        }
+    },
+    {
+        "input": "take me to Rome",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "rome"
+            ]
+        }
+    },
+    {
+        "input": "  zoom   Berlin  ",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "berlin"
+            ]
+        }
+    },
+    {
+        "input": "find Sydney",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "sydney"
+            ]
+        }
+    },
+    {
+        "input": "serch for Dubai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "dubai"
+            ]
+        }
+    },
+    {
+        "input": "put marker on l4",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l4"
+            ]
+        }
+    },
+    {
+        "input": "add a mark at l5",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l5"
+            ]
+        }
+    },
+    {
+        "input": "drop pin on l6",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l6"
+            ]
+        }
+    },
+    {
+        "input": "set markr to l7",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l7"
+            ]
+        }
+    },
+    {
+        "input": "place marker in l8",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l8"
+            ]
+        }
+    },
+    {
+        "input": "create marker l9 l10",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l9",
+                "l10"
+            ]
+        }
+    },
+    {
+        "input": "  mark   l11,  l12 ",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l11",
+                "l12"
+            ]
+        }
+    },
+    {
+        "input": "show route Boston Chicago",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "boston",
+                "chicago"
+            ]
+        }
+    },
+    {
+        "input": "plan route from Miami Orlando",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "miami",
+                "orlando"
+            ]
+        }
+    },
+    {
+        "input": "directions from Dallas to Austin",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "dallas",
+                "austin"
+            ]
+        }
+    },
+    {
+        "input": "find route San Francisco Los Angeles",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "san francisco",
+                "los angeles"
+            ]
+        }
+    },
+    {
+        "input": "gt route betwen New York Philadelphia",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "new york",
+                "philadelphia"
+            ]
+        }
+    },
+    {
+        "input": "navigae from Seattle to Portland",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "seattle",
+                "portland"
+            ]
+        }
+    },
+    {
+        "input": "how to get from Denver to Boulder",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "denver",
+                "boulder"
+            ]
+        }
+    },
+    {
+        "input": "best route Phoenix to Tucson",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "phoenix",
+                "tucson"
+            ]
+        }
+    },
+    {
+        "input": "clrscrn",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "  reset map  ",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "clear all markers",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "start over",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "turn on satelite",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "satelite view please",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "disable satellite",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "  satellite   mode  off ",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "show highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "turn off highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "hide highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "highway display on",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "zoom to Mumbai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "mumbai"
+            ]
+        }
+    },
+    {
+        "input": "show me the Delhi",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "delhi"
+            ]
+        }
+    },
+    {
+        "input": "navigate to Bangalore",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "bangalore"
+            ]
+        }
+    },
+    {
+        "input": "find Chennai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "chennai"
+            ]
+        }
+    },
+    {
+        "input": "zoom in Kolkata",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "kolkata"
+            ]
+        }
+    },
+    {
+        "input": "zoom out Hyderabad",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "hyderabad"
+            ]
+        }
+    },
+    {
+        "input": "display Pune",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "pune"
+            ]
+        }
+    },
+    {
+        "input": "show me the map of Ahmedabad",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "ahmedabad"
+            ]
+        }
+    },
+    {
+        "input": "put a marker on l13",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l13"
+            ]
+        }
+    },
+    {
+        "input": "ad mark l14",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l14"
+            ]
+        }
+    },
+    {
+        "input": "mark this location l15",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l15"
+            ]
+        }
+    },
+    {
+        "input": "drop a pin at l16",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l16"
+            ]
+        }
+    },
+    {
+        "input": "new marker l17",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l17"
+            ]
+        }
+    },
+    {
+        "input": "create markers l18,l19",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l18",
+                "l19"
+            ]
+        }
+    },
+    {
+        "input": "pin locations l20 and l21",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l20",
+                "l21"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from Surat to Vadodara",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "surat",
+                "vadodara"
+            ]
+        }
+    },
+    {
+        "input": "gt directions Jaipur to Udaipur",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "jaipur",
+                "udaipur"
+            ]
+        }
+    },
+    {
+        "input": "find a route between Lucknow and Kanpur",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "lucknow",
+                "kanpur"
+            ]
+        }
+    },
+    {
+        "input": "plan a trip from Indore to Bhopal",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "indore",
+                "bhopal"
+            ]
+        }
+    },
+    {
+        "input": "route planning Patna to Ranchi",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "patna",
+                "ranchi"
+            ]
+        }
+    },
+    {
+        "input": "travel route Guwahati to Shillong",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "guwahati",
+                "shillong"
+            ]
+        }
+    },
+    {
+        "input": "best way from Chandigarh to Manali",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "chandigarh",
+                "manali"
+            ]
+        }
+    },
+    {
+        "input": "how to reach Agra from Delhi",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "agra"
+            ]
+        }
+    },
+    {
+        "input": "clear the map",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "reset view",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "clear markers and routes",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "back to default",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "activate satellite mode",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "deactivate satellite mode",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "sat view on",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "sat view off",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "enable highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "disable highway view",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "highway layer on",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highway layer off",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "Zoom to london",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "Show me the paris",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "zoom in india",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "india"
+            ]
+        }
+    },
+    {
+        "input": "zoom in NewYork",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "Add marker in l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "Add marker on l2",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "mark on l1",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1"
+            ]
+        }
+    },
+    {
+        "input": "pin l1,l2",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l1",
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from mumbai to pune",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "mumbai",
+                "pune"
+            ]
+        }
+    },
+    {
+        "input": "route for Delhi to Agra",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "agra"
+            ]
+        }
+    },
+    {
+        "input": "zoom at mumbai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "mumbai"
+            ]
+        }
+    },
+    {
+        "input": "zoom out at delhi",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "delhi"
+            ]
+        }
+    },
+    {
+        "input": "Zom in to London",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "Show me the Paris",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "Find route from New York and Washington",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "new york",
+                "washington"
+            ]
+        }
+    },
+    {
+        "input": "zoom in to NewYork",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from Mumbai to Pune",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "mumbai",
+                "pune"
+            ]
+        }
+    },
+    {
+        "input": "route Delhi to Agra",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "agra"
+            ]
+        }
+    },
+    {
+        "input": "Zom at Mumbai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "mumbai"
+            ]
+        }
+    },
+    {
+        "input": "zoom out at Delhi",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "delhi"
+            ]
+        }
+    },
+    {
+        "input": "Add marker in l3",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l3"
+            ]
+        }
+    },
+    {
+        "input": "Add marker on l4",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l4"
+            ]
+        }
+    },
+    {
+        "input": "mark on l5",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l5"
+            ]
+        }
+    },
+    {
+        "input": "pin l6,l7",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l6",
+                "l7"
+            ]
+        }
+    },
+    {
+        "input": "highways on now",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highways of now",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "turn on satelite",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "satelite off now",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "reset all",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "clear all please",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "how to go from v1 and v2",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "v1",
+                "v2"
+            ]
+        }
+    },
+    {
+        "input": "i want go from l1 and l2",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "l1",
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "Zooooom london",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "add markerr at l8",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l8"
+            ]
+        }
+    },
+    {
+        "input": "zomm San Francisco",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "san francisco"
+            ]
+        }
+    },
+    {
+        "input": "Showw me Paris",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from pune to nashik",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "pune",
+                "nashik"
+            ]
+        }
+    },
+    {
+        "input": "Show me route between Jaipur  Udaipur",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "jaipur",
+                "udaipur"
+            ]
+        }
+    },
+    {
+        "input": "zomm in to Mumbai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "mumbai"
+            ]
+        }
+    },
+    {
+        "input": "add markerr at l9",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l9"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from Kolkata to Digha",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "kolkata",
+                "digha"
+            ]
+        }
+    },
+    {
+        "input": "how to go ranchi from patna",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "ranchi",
+                "patna"
+            ]
+        }
+    },
+    {
+        "input": "Zom out to Delhi",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "delhi"
+            ]
+        }
+    },
+    {
+        "input": "Add marker on l10",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l10"
+            ]
+        }
+    },
+    {
+        "input": "clear the map data",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "turn on the satelite view",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "turn of the highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "give me the route l1 to l2",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "l1",
+                "l2"
+            ]
+        }
+    },
+    {
+        "input": "find best route  l3 l4",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "l3",
+                "l4"
+            ]
+        }
+    },
+    {
+        "input": "Zo0m to London",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "Shoooow me Paris",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "rout from pune to nashik",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "pune",
+                "nashik"
+            ]
+        }
+    },
+    {
+        "input": "Find route between Jaipur and Udaipur",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "jaipur",
+                "udaipur"
+            ]
+        }
+    },
+    {
+        "input": "get route l5 to l6",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "l5",
+                "l6"
+            ]
+        }
+    },
+    {
+        "input": "zoom in NewYork l7",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york",
+                "l7"
+            ]
+        }
+    },
+    {
+        "input": "add markerr at l7",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l7"
+            ]
+        }
+    },
+    {
+        "input": "pin l8, l9 and l10",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l8",
+                "l9",
+                "l10"
+            ]
+        }
+    },
+    {
+        "input": "show rout from Mumbai to Goa",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "mumbai",
+                "goa"
+            ]
+        }
+    },
+    {
+        "input": "show rout from Mumbai to Pune",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "mumbai",
+                "pune"
+            ]
+        }
+    },
+    {
+        "input": "Zoom at Hyderabad",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "hyderabad"
+            ]
+        }
+    },
+    {
+        "input": "Zoom in to Chennai",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "chennai"
+            ]
+        }
+    },
+    {
+        "input": "Add marker in l11",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l11"
+            ]
+        }
+    },
+    {
+        "input": "put mark on l12",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l12"
+            ]
+        }
+    },
+    {
+        "input": "clearr screen",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "sat on",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "sat off",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "highwaysss on",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highwas off",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "show meee London",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from delhi to jaipur",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "jaipur"
+            ]
+        }
+    },
+    {
+        "input": "Zom in Bangalore",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "bangalore"
+            ]
+        }
+    },
+    {
+        "input": "Add markerr l13",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l13"
+            ]
+        }
+    },
+    {
+        "input": "shw rout from Kolkata to Burdwan",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "kolkata",
+                "burdwan"
+            ]
+        }
+    },
+    {
+        "input": "how to reach patna from ranchi",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "patna",
+                "ranchi"
+            ]
+        }
+    },
+    {
+        "input": "Zom out from Delhi",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "delhi"
+            ]
+        }
+    },
+    {
+        "input": "Add marker on l14",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l14"
+            ]
+        }
+    },
+    {
+        "input": "clear everything",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "turn on satellite image",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "remove highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "off"
+            ]
+        }
+    },
+    {
+        "input": "get me the route betwen v1 and v2",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "v1",
+                "v2"
+            ]
+        }
+    },
+    {
+        "input": "find shortest route for l3 l4",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "l3",
+                "l4"
+            ]
+        }
+    },
+    {
+        "input": "showw location London",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "Paris zooom",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "pune to nashik route",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "pune",
+                "nashik"
+            ]
+        }
+    },
+    {
+        "input": "Jaipur Udaipur route",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "jaipur",
+                "udaipur"
+            ]
+        }
+    },
+    {
+        "input": "marker at l15",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l15"
+            ]
+        }
+    },
+    {
+        "input": "NewYork zoom in",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "marker at l16",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l16"
+            ]
+        }
+    },
+    {
+        "input": "show rout between Mumbai and Goa",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "mumbai",
+                "goa"
+            ]
+        }
+    },
+    {
+        "input": "show rout from Delhi to Mumbai",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "mumbai"
+            ]
+        }
+    },
+    {
+        "input": "Hyderabad zom",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "hyderabad"
+            ]
+        }
+    },
+    {
+        "input": "Chennai zoom in",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "chennai"
+            ]
+        }
+    },
+    {
+        "input": "l17 marker",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l17"
+            ]
+        }
+    },
+    {
+        "input": "mark locations l18",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l18"
+            ]
+        }
+    },
+    {
+        "input": "clear all data on map",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "on satellite",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "highwayss on please",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "how can I go l19 to l20",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "l19",
+                "l20"
+            ]
+        }
+    },
+    {
+        "input": "navigate to v3 from v4",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "v3",
+                "v4"
+            ]
+        }
+    },
+    {
+        "input": "Zooo00om London",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "london"
+            ]
+        }
+    },
+    {
+        "input": "Paris show",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "paris"
+            ]
+        }
+    },
+    {
+        "input": "rout from pune to lonavala",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "pune",
+                "lonavala"
+            ]
+        }
+    },
+    {
+        "input": "Jaipur to Ajmer route",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "jaipur",
+                "ajmer"
+            ]
+        }
+    },
+    {
+        "input": "marker at l21",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l21"
+            ]
+        }
+    },
+    {
+        "input": "NewYork city zoom",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "new york"
+            ]
+        }
+    },
+    {
+        "input": "l22 marker",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l22"
+            ]
+        }
+    },
+    {
+        "input": "Mumbai Goa rout",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "mumbai",
+                "goa"
+            ]
+        }
+    },
+    {
+        "input": "Delhi to Chennai route",
+        "expected": {
+            "command": "route",
+            "locations": [
+                "delhi",
+                "chennai"
+            ]
+        }
+    },
+    {
+        "input": "Hyderabad zoom out",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "hyderabad"
+            ]
+        }
+    },
+    {
+        "input": "Chennai zoom out",
+        "expected": {
+            "command": "zoom",
+            "locations": [
+                "chennai"
+            ]
+        }
+    },
+    {
+        "input": "mark loc l23",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l23"
+            ]
+        }
+    },
+    {
+        "input": "mark location l24",
+        "expected": {
+            "command": "marker",
+            "locations": [
+                "l24"
+            ]
+        }
+    },
+    {
+        "input": "clear map view",
+        "expected": {
+            "command": "reset",
+            "locations": []
+        }
+    },
+    {
+        "input": "satellite view on",
+        "expected": {
+            "command": "satellite",
+            "locations": [
+                "on"
+            ]
+        }
+    },
+    {
+        "input": "on highways",
+        "expected": {
+            "command": "highways",
+            "locations": [
+                "on"
+            ]
+        }
+    }
+]
