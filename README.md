@@ -1,5 +1,5 @@
 # Marvin - Voice Activated Interactive Map Assistant
-
+![Marvin Screenshot](screenshot.png)
 ## Overview
 
 Marvin is a realtime voice-controlled assistant designed to interact with a map interface. It allows users to perform actions such as zooming to locations, adding markers, finding routes, and toggling map layers using voice commands. This project integrates a web-based frontend with a Python backend to provide a seamless user experience.
@@ -174,3 +174,5 @@ Before you begin, ensure you have the following installed:
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+Thank you.
